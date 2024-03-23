@@ -138,6 +138,6 @@ app.get('/menu3', (req, res) => {
       .catch(error => console.error(error));
 });
 
-    app.listen(8080, () => console.log('Server listening on port 8080'));
+    app.listen(80, () => console.log('Server listening on port 8080'));
   })
   .catch(console.error);
