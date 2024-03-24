@@ -6495,7 +6495,7 @@ Cheese served with French Fries </p>
                                         
                                                 <% for (let category in menuData) { %>
                                                     <% menuData[category].forEach(item => { %>
-                                                        <% if (item.item === "JAN VAN RIEBEEK") { %>
+                                                        <% if (item.item === "JAN VAN RIEBEEK - RED") { %>
                                                             <p class="price"> <ins>
                                                                 <span class="amout"><%= item.price %></ins></span>
                                                             </p>
@@ -6521,9 +6521,15 @@ Cheese served with French Fries </p>
                                         
                                                 <p class="desc">(Chenin Blanc / Semillion – White)<br> per bottle</p>
                                         
-                                                <p class="price">
-                                                    <span class="amout">N15,000</span>
-                                                </p>
+                                                <% for (let category in menuData) { %>
+                                                    <% menuData[category].forEach(item => { %>
+                                                        <% if (item.item === "JAN VAN RIEBEEK - WHITE") { %>
+                                                            <p class="price"> <ins>
+                                                                <span class="amout"><%= item.price %></ins></span>
+                                                            </p>
+                                                        <% } %>
+                                                    <% }) %>
+                                                <% } %>
                                             </div>
                                         
                                         </div>
