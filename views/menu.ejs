@@ -6029,9 +6029,15 @@ Cheese served with French Fries </p>
                                         
                                                 <p class="desc">...</p>
                                         
-                                                <p class="price">
-                                                    <span class="amout">N4000 per tot <br> N40,000 per bottle</span>
-                                                </p>
+                                                <% for (let category in menuData) { %>
+                                                    <% menuData[category].forEach(item => { %>
+                                                        <% if (item.item === "TEQUILA OLMECA") { %>
+                                                            <p class="price"> <ins>
+                                                                <span class="amout"><%= item.price %></ins></span>
+                                                            </p>
+                                                        <% } %>
+                                                    <% }) %>
+                                                <% } %>
                                             </div>
                                         
                                         </div>
