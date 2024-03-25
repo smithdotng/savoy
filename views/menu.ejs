@@ -6238,9 +6238,9 @@ Cheese served with French Fries </p>
                                         
                                                 <% for (let category in menuData) { %>
                                                     <% menuData[category].forEach(item => { %>
-                                                        <% if (item.item === "HENNESSY VSOP") { %>
-                                                            <p class="price">
-                                                                <span class="amout"><%= item.price %></span>
+                                                        <% if (item.item === "HENNESSEY VSOP") { %>
+                                                            <p class="price"> <ins>
+                                                                <span class="amout"><%= item.price %></ins></span>
                                                             </p>
                                                         <% } %>
                                                     <% }) %>
